@@ -8,7 +8,7 @@
     background-position: center center;
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people-office-mobile.jpg);
+        url(/images/people-office-mobile.jpg);
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -17,8 +17,7 @@
     color: #FFF;
     font-size: 36px;
     line-height: 1.11;
-    width: 288px;
-    height: 160px;
+    max-width: 220px;
     font-weight: 700;
     letter-spacing: 0.02em;
     margin: 0 auto;
@@ -34,7 +33,7 @@
     min-width: 169px;
     height: 56px;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 72px;
     border: none;
     border-radius: 4px;
     display: block;
@@ -57,6 +56,14 @@
     .hero {
         padding-top: 112px;
         padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(/images/people-office-tablet.jpg);
+    }
+
+    .title-one {
+        max-width: 496px;
+        font-size: 56px;
+
     }
 
 }
@@ -64,9 +71,10 @@
 @media screen and (min-width: 1158px) {
 
     .hero {
-
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(/images/people-office-desctop.jpg);
 
     }
 
@@ -74,11 +82,11 @@
 
         font-size: 56px;
         font-weight: 700;
-
         line-height: 1.07;
-        max-width: 496px;
-
     }
 
+    .button {
+        margin-top: 48px;
+    }
 
 }
