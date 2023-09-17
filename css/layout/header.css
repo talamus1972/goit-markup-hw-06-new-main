@@ -10,36 +10,34 @@
 .container-header {
     display: flex;
     align-items: center;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    justify-content: space-between;
 
 }
 
 .webstudio {
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
     text-decoration: none;
     letter-spacing: 0.03em;
-    font-size: 18px;
-    line-height: 1.17;
+    line-height: 1.16;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin: 0;
+
 }
 
 .studio {
     color: #2e2f42;
 }
 
-.header {
-    margin: 0;
+.nav-header {
     display: flex;
     align-items: center;
-
 }
 
 .link-all {
-    display: flex;
+    display: none;
     gap: 40px;
 
 }
@@ -81,8 +79,10 @@
 
 }
 
+
 .address-list {
     display: none;
+    column-gap: 40px;
 }
 
 .address-list .link {
@@ -98,13 +98,31 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .address-list .link:hover,
 .address-list .link:focus {
     color: #404BBF;
 }
 
+.header-icon-menu {
+    stroke: currentColor;
+    fill: currentColor;
+
+}
+
 @media screen and (min-width: 768px) {
+
+    .nav-header {
+        column-gap: 120px;
+        margin-right: auto;
+    }
+
+    .header-icon-menu {
+        display: none;
+    }
+
     .address-list {
+        display: flex;
         flex-direction: column;
         row-gap: 12px;
     }
@@ -115,8 +133,9 @@
         letter-spacing: 0.04em;
     }
 
-    .header-icon-menu {
-        display: none;
+    .link-all {
+        display: flex;
+
     }
 }
 
@@ -127,21 +146,29 @@
     }
 
     .webstudio {
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.17;
         margin-right: 76px;
     }
 
-    .header {
+    .nav-header {
+        column-gap: 76px;
         margin-right: auto;
-
     }
 
-    .link-all {
-        display: flex;
-        gap: 40px;
-    }
 
     .address-list {
-        display: flex;
-        gap: 40px;
+        /* display: flex; */
+        column-gap: 40px;
+        flex-direction: row;
     }
+
+    .address-list .link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
 }
